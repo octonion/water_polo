@@ -1,9 +1,0 @@
-BEGIN
- rd |      name      |   p   
-----+----------------+-------
-  6 | Syracuse       | 0.603
-  6 | North Carolina | 0.397
-(2 rows)
-
-COPY 2
-COMMIT

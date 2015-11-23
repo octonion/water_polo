@@ -1,9 +1,0 @@
-BEGIN
-   team_name    |   p   
-----------------+-------
- Syracuse       | 0.603
- North Carolina | 0.397
-(2 rows)
-
-COPY 2
-COMMIT
