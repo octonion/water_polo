@@ -1,67 +1,62 @@
 BEGIN
 CREATE TABLE
-INSERT 0 58
+INSERT 0 53
  rk |          team          | str  | ofs  | dfs  | sos  
 ----+------------------------+------+------+------+------
-  1 | USC                    | 5.27 | 1.93 | 0.37 | 1.43
-  2 | UCLA                   | 4.63 | 1.82 | 0.39 | 1.39
-  3 | Stanford               | 4.43 | 1.82 | 0.41 | 1.40
-  4 | California             | 4.39 | 2.03 | 0.46 | 1.46
-  5 | Pacific                | 3.09 | 1.61 | 0.52 | 1.41
-  6 | UC Santa Barbara       | 2.65 | 1.46 | 0.55 | 1.37
-  7 | UC Irvine              | 2.60 | 1.56 | 0.60 | 1.35
-  8 | UC-Irvine              | 2.47 | 2.05 | 0.83 | 1.12
-  9 | Pepperdine             | 2.44 | 1.64 | 0.67 | 1.40
- 10 | UC-Davis               | 2.31 | 1.69 | 0.73 | 1.12
- 11 | Long Beach State       | 2.00 | 1.28 | 0.64 | 1.26
- 12 | UC Davis               | 1.87 | 1.27 | 0.68 | 1.11
- 13 | UC San Diego           | 1.67 | 1.30 | 0.78 | 1.18
- 14 | Loyola Marymount       | 1.66 | 1.22 | 0.73 | 1.21
- 15 | Princeton              | 1.53 | 1.14 | 0.75 | 1.03
- 16 | Concordia              | 1.30 | 1.19 | 0.92 | 1.04
- 17 | Santa Clara            | 1.30 | 1.06 | 0.82 | 1.19
- 18 | Air Force              | 1.23 | 1.10 | 0.89 | 1.20
- 19 | Cal Baptist            | 1.22 | 1.17 | 0.96 | 1.01
- 20 | Bucknell               | 1.21 | 1.06 | 0.87 | 1.03
- 21 | St. Francis Brooklyn   | 1.20 | 1.09 | 0.90 | 1.00
- 22 | St.Francis Brooklyn    | 1.16 | 1.17 | 1.00 | 0.77
- 23 | Brown                  | 1.15 | 0.99 | 0.86 | 0.99
- 24 | San Jose State         | 1.14 | 1.01 | 0.88 | 1.35
- 25 | Navy                   | 1.12 | 1.13 | 1.01 | 0.96
- 26 | Claremont-Mudd-Scripps | 1.08 | 1.07 | 0.99 | 0.95
- 27 | Johns Hopkins          | 1.05 | 1.04 | 0.99 | 0.92
- 28 | Claremont Mudd Scripps | 1.00 | 0.98 | 0.98 | 1.00
- 29 | Pomona Pitzer          | 0.97 | 0.89 | 0.92 | 1.12
- 30 | Toronto                | 0.92 | 1.03 | 1.13 | 0.85
- 31 | Harvard                | 0.86 | 0.94 | 1.09 | 1.01
- 32 | Saint Francis          | 0.84 | 1.04 | 1.23 | 0.95
- 33 | Whittiter              | 0.84 | 0.87 | 1.03 | 0.86
- 34 | Redlands               | 0.82 | 0.84 | 1.02 | 1.02
- 35 | Chapman                | 0.79 | 1.02 | 1.29 | 0.91
- 36 | Fresno Pacific         | 0.77 | 0.91 | 1.19 | 1.04
- 37 | George Washington      | 0.75 | 0.93 | 1.24 | 0.92
- 38 | Cal Lutheran           | 0.74 | 0.86 | 1.17 | 0.87
- 39 | MIT                    | 0.74 | 0.79 | 1.08 | 0.91
- 40 | Pomona-Pitzer          | 0.73 | 0.75 | 1.03 | 0.97
- 41 | Whittier               | 0.72 | 0.90 | 1.24 | 0.99
- 42 | Iona                   | 0.71 | 0.93 | 1.30 | 0.92
- 43 | Vanguard               | 0.71 | 0.86 | 1.21 | 0.98
- 44 | Fordham                | 0.68 | 0.76 | 1.11 | 0.90
- 45 | George Washingtotn     | 0.66 | 0.83 | 1.27 | 1.12
- 46 | Mercyhurst             | 0.55 | 0.74 | 1.34 | 0.76
- 47 | Notre Dame             | 0.54 | 0.81 | 1.51 | 0.67
- 48 | La Verne               | 0.51 | 0.71 | 1.38 | 0.94
- 49 | Occidental             | 0.48 | 0.64 | 1.33 | 0.93
- 50 | Notre Dame (Ohio)      | 0.45 | 0.81 | 1.79 | 0.75
- 51 | Gannon                 | 0.44 | 0.70 | 1.59 | 0.78
- 52 | Washington & Jefferson | 0.43 | 0.70 | 1.63 | 0.75
- 53 | Monmouth               | 0.34 | 0.73 | 2.15 | 0.71
- 54 | Connecticut            | 0.34 | 0.58 | 1.73 | 0.84
- 55 | Connecticut College    | 0.33 | 0.58 | 1.76 | 1.08
- 56 | Penn State Behrend     | 0.29 | 0.53 | 1.85 | 0.73
- 57 | Salem International    | 0.28 | 0.56 | 2.00 | 0.71
- 58 | Cal Tech               | 0.24 | 0.52 | 2.12 | 0.83
-(58 rows)
+  1 | USC                    | 5.44 | 1.97 | 0.36 | 1.45
+  2 | UCLA                   | 4.78 | 1.86 | 0.39 | 1.41
+  3 | Stanford               | 4.57 | 1.85 | 0.41 | 1.42
+  4 | California             | 4.53 | 2.07 | 0.46 | 1.48
+  5 | Pacific                | 3.19 | 1.65 | 0.52 | 1.43
+  6 | UC Santa Barbara       | 2.73 | 1.48 | 0.54 | 1.39
+  7 | UC Irvine              | 2.71 | 1.61 | 0.59 | 1.36
+  8 | Pepperdine             | 2.52 | 1.67 | 0.66 | 1.42
+  9 | Long Beach State       | 2.06 | 1.30 | 0.63 | 1.28
+ 10 | UC Davis               | 1.94 | 1.31 | 0.67 | 1.12
+ 11 | UC San Diego           | 1.73 | 1.33 | 0.77 | 1.20
+ 12 | Loyola Marymount       | 1.73 | 1.25 | 0.72 | 1.23
+ 13 | Princeton              | 1.58 | 1.16 | 0.74 | 1.05
+ 14 | Santa Clara            | 1.34 | 1.09 | 0.81 | 1.21
+ 15 | Concordia              | 1.33 | 1.22 | 0.92 | 1.06
+ 16 | Air Force              | 1.27 | 1.12 | 0.88 | 1.22
+ 17 | Cal Baptist            | 1.26 | 1.20 | 0.95 | 1.03
+ 18 | Bucknell               | 1.25 | 1.08 | 0.86 | 1.04
+ 19 | St.Francis Brooklyn    | 1.24 | 1.12 | 0.90 | 1.00
+ 20 | Brown                  | 1.19 | 1.01 | 0.86 | 1.00
+ 21 | San Jose State         | 1.18 | 1.03 | 0.87 | 1.37
+ 22 | Navy                   | 1.16 | 1.16 | 1.00 | 0.97
+ 23 | Johns Hopkins          | 1.09 | 1.06 | 0.98 | 0.93
+ 24 | Claremont Mudd Scripps | 1.06 | 1.04 | 0.97 | 1.00
+ 25 | Pomona Pitzer          | 0.95 | 0.88 | 0.93 | 1.10
+ 26 | Toronto                | 0.94 | 1.05 | 1.12 | 0.86
+ 27 | Harvard                | 0.89 | 0.96 | 1.08 | 1.03
+ 28 | Whittiter              | 0.86 | 0.88 | 1.02 | 0.87
+ 29 | Saint Francis          | 0.86 | 1.05 | 1.23 | 0.96
+ 30 | Redlands               | 0.85 | 0.86 | 1.01 | 1.04
+ 31 | Chapman                | 0.81 | 1.04 | 1.28 | 0.92
+ 32 | Fresno Pacific         | 0.79 | 0.93 | 1.17 | 1.06
+ 33 | George Washington      | 0.77 | 0.95 | 1.23 | 0.93
+ 34 | Cal Lutheran           | 0.77 | 0.88 | 1.15 | 0.89
+ 35 | MIT                    | 0.76 | 0.81 | 1.07 | 0.92
+ 36 | Whittier               | 0.75 | 0.92 | 1.22 | 1.00
+ 37 | Iona                   | 0.74 | 0.95 | 1.29 | 0.94
+ 38 | Vanguard               | 0.73 | 0.87 | 1.20 | 1.00
+ 39 | Fordham                | 0.70 | 0.77 | 1.10 | 0.91
+ 40 | George Washingtotn     | 0.67 | 0.84 | 1.26 | 1.13
+ 41 | Mercyhurst             | 0.57 | 0.75 | 1.33 | 0.77
+ 42 | Notre Dame             | 0.56 | 0.83 | 1.49 | 0.68
+ 43 | La Verne               | 0.53 | 0.72 | 1.36 | 0.96
+ 44 | Occidental             | 0.50 | 0.65 | 1.31 | 0.94
+ 45 | Notre Dame (Ohio)      | 0.47 | 0.83 | 1.78 | 0.76
+ 46 | Gannon                 | 0.46 | 0.72 | 1.57 | 0.79
+ 47 | Washington & Jefferson | 0.44 | 0.71 | 1.61 | 0.76
+ 48 | Monmouth               | 0.35 | 0.75 | 2.14 | 0.72
+ 49 | Connecticut            | 0.35 | 0.59 | 1.71 | 0.85
+ 50 | Connecticut College    | 0.34 | 0.59 | 1.75 | 1.10
+ 51 | Penn State Behrend     | 0.30 | 0.54 | 1.83 | 0.74
+ 52 | Salem International    | 0.29 | 0.58 | 1.98 | 0.72
+ 53 | Cal Tech               | 0.25 | 0.53 | 2.10 | 0.84
+(53 rows)
 
-COPY 58
+COPY 53
 COMMIT

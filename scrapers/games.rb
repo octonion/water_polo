@@ -54,6 +54,8 @@ last_year = 2015
       text = text.gsub(bad2,"").strip
       text = text.gsub('"','').strip
       text = text.gsub("'","").strip
+      text = text.gsub('-',' ').strip
+      text = text.gsub('. ','.').strip
       if (text=='')
         text = nil
       end
