@@ -55,7 +55,7 @@ r.team_name,
 r.opponent_name,
 r.year
 from ncaa.results r
-where r.year between 2015 and 2015
+where r.year between 2016 and 2016
 );
 
 update r
