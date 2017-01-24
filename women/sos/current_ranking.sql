@@ -21,7 +21,7 @@ sf.offensive as ofs,
 sf.defensive as dfs,
 sf.schedule_strength as sos
 from ncaa._schedule_factors sf
-where sf.year in (2016)
+where sf.year in (2017)
 order by str desc);
 
 select
