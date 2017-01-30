@@ -1,22 +1,32 @@
 rk,team,str,ofs,dfs,sos
-1,UCLA,4.00,1.76,0.44,0.95
-2,USC,3.28,1.86,0.57,0.98
-3,Stanford,3.14,1.63,0.52,0.75
-4,California,1.74,1.25,0.72,0.87
-5,Michigan,1.71,1.19,0.70,1.16
-6,Hawaii,1.24,1.09,0.88,1.08
-7,Cal State East Bay,1.12,1.16,1.04,0.94
-8,UC Santa Barbara,1.10,1.01,0.92,0.98
-9,UC San Diego,1.04,1.11,1.07,1.11
-10,Indiana,1.03,1.01,0.98,1.09
-11,Pacific,1.03,1.26,1.22,1.03
-12,Fresno Pacific,0.88,1.03,1.18,1.05
-13,CSU Northridge,0.86,0.70,0.82,1.01
-14,Marist,0.70,0.99,1.43,0.91
-15,Cal State Northridge,0.67,0.83,1.24,1.16
-16,CSU Bakersfield,0.60,0.73,1.22,0.96
-17,Cal Baptist,0.53,0.68,1.27,1.01
-18,San Jose State,0.52,0.68,1.29,1.30
-19,UC Davis,0.51,0.69,1.36,1.23
-20,Sonoma State,0.50,0.68,1.36,0.86
-21,Pomona Pitzer,0.34,0.59,1.74,1.03
+1,UCLA,4.50,1.87,0.42,1.01
+2,Stanford,3.68,1.80,0.49,0.89
+3,USC,3.62,1.83,0.51,0.92
+4,Arizona State,2.18,1.25,0.57,0.95
+5,UC Irvine,2.10,1.47,0.70,0.79
+6,Michigan,1.85,1.23,0.66,1.22
+7,California,1.77,1.28,0.72,0.89
+8,Loyola Marymount,1.30,1.22,0.94,0.74
+9,Hawaii,1.30,1.14,0.88,1.11
+10,Pacific,1.17,1.31,1.12,1.10
+11,UC San Diego,1.15,1.17,1.02,1.15
+12,UC Santa Barbara,1.12,1.04,0.93,1.04
+13,Santa Clara,1.08,1.11,1.03,0.96
+14,Indiana,0.96,0.91,0.95,1.06
+15,CSU Monterey Bay,0.91,1.03,1.13,1.03
+16,Cal State Northridge,0.86,1.00,1.15,1.08
+17,Long Beach State,0.86,1.03,1.19,1.24
+18,San Diego State,0.83,0.87,1.04,1.12
+19,Wagner,0.77,0.92,1.19,1.11
+20,Marist,0.73,1.01,1.39,0.92
+21,UC Davis,0.72,0.93,1.29,1.20
+22,San Jose State,0.69,0.77,1.11,1.17
+23,CSU Bakersfield,0.60,0.72,1.19,0.97
+24,Whittier,0.56,0.88,1.57,1.40
+25,Cal State East Bay,0.56,0.87,1.55,0.85
+26,Cal Baptist,0.56,0.74,1.33,1.00
+27,Fresno Pacific,0.55,0.79,1.44,0.78
+28,Sonoma State,0.55,0.68,1.25,0.91
+29,CSU Northridge,0.51,0.70,1.38,0.98
+30,Pomona Pitzer,0.44,0.69,1.57,1.00
+31,Concordia,0.34,0.62,1.79,1.17
