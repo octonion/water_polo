@@ -3,19 +3,20 @@ select
 r.year,
 
 (sum(
-case when ((t.strength*f.exp_factor)>(o.strength/f.exp_factor)
+case when ((t.strength)>(o.strength)
             and r.team_score>r.opponent_score) then 1
-     when ((t.strength*f.exp_factor)<(o.strength/f.exp_factor)
+     when ((t.strength)<(o.strength)
             and r.team_score<r.opponent_score) then 1
 else 0 end)::float/
 count(*))::numeric(4,3) as model,
 
 (
-sum(
-case when r.team_score>r.opponent_score and r.field='offense_home' then 1
-     when r.team_score<r.opponent_score and r.field='defense_home' then 1
-     when r.field='neutral' then 0.5
-     else 0 end)::float/
+sum(0.5)::float/
+--sum(
+--case when r.team_score>r.opponent_score and r.field='offense_home' then 1
+--     when r.team_score<r.opponent_score and r.field='defense_home' then 1
+--     when r.field='neutral' then 0.5
+--     else 0 end)::float/
 --sum(
 count(*)
 --case when r.field in ('offense_home','defense_home') then 1
@@ -25,9 +26,9 @@ count(*)
 
 (
 sum(
-case when ((t.strength*f.exp_factor)>(o.strength/f.exp_factor)
+case when ((t.strength)>(o.strength)
             and r.team_score>r.opponent_score) then 1
-     when ((t.strength*f.exp_factor)<(o.strength/f.exp_factor)
+     when ((t.strength)<(o.strength)
             and r.team_score<r.opponent_score) then 1
 else 0
 end)::float/
@@ -35,11 +36,12 @@ count(*)
 
 -
 
-sum(
-case when r.team_score>r.opponent_score and r.field='offense_home' then 1
-     when r.team_score<r.opponent_score and r.field='defense_home' then 1
-     when r.field='neutral' then 0.5
-     else 0 end)::float/
+sum(0.5)::float/
+--sum(
+--case when r.team_score>r.opponent_score and r.field='offense_home' then 1
+--     when r.team_score<r.opponent_score and r.field='defense_home' then 1
+--     when r.field='neutral' then 0.5
+--     else 0 end)::float/
 --sum(
 --case when r.field in ('offense_home','defense_home') then 1
 --     else 0
@@ -49,18 +51,18 @@ count(*)
 count(*)
 from ncaa.results r
 join ncaa._schedule_factors t
-  on (t.year,t.team_id)=(r.year,r.team_id)
+  on (t.year,t.team_id)=(r.year,r.team_name)
 join ncaa._schedule_factors o
-  on (o.year,o.team_id)=(r.year,r.opponent_id)
-join ncaa._factors f
-  on (f.parameter,f.level)=('field',r.field)
+  on (o.year,o.team_id)=(r.year,r.opponent_name)
+--join ncaa._factors f
+--  on (f.parameter,f.level)=('field',r.field)
 where
 
 TRUE
 
 -- each game once
-and r.pulled_id = r.team_id
-and r.team_id < r.opponent_id
+--and r.pulled_id = r.team_id
+--and r.team_id < r.opponent_id
 
 and not((r.team_score,r.opponent_score)=(0,0))
 
@@ -74,11 +76,12 @@ and not((r.team_score,r.opponent_score)=(0,0))
 --and r.team_div_id=1
 --and r.opponent_div_id=1
 
-and r.team_div_id=r.opponent_div_id
+--and r.team_div_id=r.opponent_div_id
 
 group by r.year
 order by r.year;
 
+/*
 -- By division
 
 select
@@ -122,19 +125,19 @@ count(*)
 count(*)
 from ncaa.results r
 join ncaa._schedule_factors t
-  on (t.year,t.team_id)=(r.year,r.team_id)
+  on (t.year,t.team_id)=(r.year,r.team_name)
 join ncaa._schedule_factors o
-  on (o.year,o.team_id)=(r.year,r.opponent_id)
-join ncaa._factors f
-  on (f.parameter,f.level)=('field',r.field)
+  on (o.year,o.team_id)=(r.year,r.opponent_name)
+--join ncaa._factors f
+--  on (f.parameter,f.level)=('field',r.field)
 where
 
 TRUE
 
 -- each game once
 
-and r.pulled_id = r.team_id
-and r.team_id < r.opponent_id
+--and r.pulled_id = r.team_id
+--and r.team_id < r.opponent_id
 
 and not((r.team_score,r.opponent_score)=(0,0))
 
@@ -200,9 +203,9 @@ count(*)
 count(*)
 from ncaa.results r
 join ncaa._schedule_factors t
-  on (t.year,t.team_id)=(r.year,r.team_id)
+  on (t.year,t.team_id)=(r.year,r.team_name)
 join ncaa._schedule_factors o
-  on (o.year,o.team_id)=(r.year,r.opponent_id)
+  on (o.year,o.team_id)=(r.year,r.opponent_name)
 join ncaa._factors f
   on (f.parameter,f.level)=('field',r.field)
 where
@@ -210,8 +213,8 @@ where
 TRUE
 
 -- each game once
-and r.pulled_id = r.team_id
-and r.team_id < r.opponent_id
+--and r.pulled_id = r.team_id
+--and r.team_id < r.opponent_id
 
 and not((r.team_score,r.opponent_score)=(0,0))
 
@@ -228,3 +231,4 @@ and not((r.team_score,r.opponent_score)=(0,0))
 and r.team_div_id=r.opponent_div_id
 
 ;
+*/
