@@ -57,7 +57,7 @@ join ncaa._factors o
 join ncaa._factors d
   on (d.parameter,d.level)=('field','defense_home')
 where
-  r1.year=2016
+  r1.year=2017
 );
 
 insert into ncaa.matrix_p
@@ -85,7 +85,7 @@ join ncaa._factors o
 join ncaa._factors d
   on (d.parameter,d.level)=('field','defense_home')
 where
-  r1.year=2016
+  r1.year=2017
 );
 
 insert into ncaa.matrix_p
