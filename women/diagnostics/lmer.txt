@@ -1,48 +1,35 @@
-[1] 5066    6
+[1] 6322    6
 [1] TRUE
-[1] 5066    4
-start par. =  1 1 1 fn =  30631.72 
+[1] 6322    4
+start par. =  1 1 1 fn =  38308.65 
 At return
-eval:  53 fn:      25792.209 par:  0.00000 0.491446 0.466096
-(NM) 20: f = 25792.2 at 0.000874914    0.491313    0.465791     2.11916    0.105338    0.175333
-(NM) 40: f = 25792.2 at 0.00122159   0.492297   0.466442    2.11752   0.102824    0.17274
-(NM) 60: f = 25792.2 at 0.000937663    0.491771    0.466383     2.11791     0.10333    0.173327
-(NM) 80: f = 25792.2 at 0.000843901    0.491159    0.466231      2.1178    0.103751      0.1733
-(NM) 100: f = 25792.2 at 0.000779416    0.491485    0.466182      2.1181    0.103968     0.17332
-(NM) 120: f = 25792.2 at 0.000779173    0.491422      0.4661     2.11803    0.104023    0.173306
-(NM) 140: f = 25792.2 at 0.000623793    0.491413    0.465987     2.11808    0.103996    0.173518
-(NM) 160: f = 25792.2 at 0.000521526    0.491406    0.465966     2.11815     0.10405    0.173649
-(NM) 180: f = 25792.2 at 0.000501987    0.491407    0.465958     2.11814    0.103987    0.173557
-(NM) 200: f = 25792.2 at 0.000127607    0.491536    0.465993     2.11786    0.103873    0.173744
-(NM) 220: f = 25792.2 at 0.000272675    0.491486    0.466059     2.11795    0.103906    0.173575
-(NM) 240: f = 25792.2 at 0.00014262   0.491554   0.466132    2.11775   0.103925   0.173435
-(NM) 260: f = 25792.2 at 0.000111469    0.491506    0.466094     2.11778    0.104095    0.173391
-(NM) 280: f = 25792.2 at 9.4314e-05   0.491503   0.466135    2.11768   0.104089   0.173347
-(NM) 300: f = 25792.2 at 0.000115688    0.491498    0.466131     2.11766    0.104057    0.173343
-(NM) 320: f = 25792.2 at 0.000114337     0.49149     0.46613     2.11766    0.104066    0.173325
-(NM) 340: f = 25792.2 at 7.51463e-05    0.491503    0.466087     2.11768    0.104036    0.173287
-(NM) 360: f = 25792.2 at 7.47617e-05    0.491475    0.466089     2.11768    0.104048    0.173282
-(NM) 380: f = 25792.2 at 5.84032e-05    0.491467    0.466071      2.1177    0.104022    0.173279
-(NM) 400: f = 25792.2 at 6.3469e-06   0.491441   0.466076    2.11772   0.104043   0.173297
-(NM) 420: f = 25792.2 at 1.50915e-05    0.491442    0.466089     2.11768    0.104027    0.173311
-(NM) 440: f = 25792.2 at 5.79119e-06    0.491435    0.466093     2.11768    0.104015     0.17331
-(NM) 460: f = 25792.2 at        0 0.491438 0.466093  2.11768 0.104013 0.173309
+eval:  45 fn:      32210.722 par:  0.00000 0.492713 0.459521
+(NM) 20: f = 32210.7 at        0 0.492713 0.459521  2.12921  0.10977  0.15071
+(NM) 40: f = 32210.7 at 7.53707e-06    0.492632    0.460008     2.12242    0.109921    0.149718
+(NM) 60: f = 32210.7 at 4.56088e-05    0.492425    0.459535     2.12278    0.110391    0.151027
+(NM) 80: f = 32210.7 at 4.15097e-05    0.492772    0.459569     2.12214     0.10989    0.150745
+(NM) 100: f = 32210.7 at 3.98737e-05    0.492683     0.45944     2.12256    0.109938    0.150812
+(NM) 120: f = 32210.7 at 3.95666e-05    0.492715    0.459515     2.12259    0.109899    0.150844
+(NM) 140: f = 32210.7 at 3.93704e-05    0.492707    0.459513     2.12261    0.109841    0.150788
+(NM) 160: f = 32210.7 at 3.91018e-05    0.492704    0.459513     2.12264    0.109846      0.1508
+(NM) 180: f = 32210.7 at 3.91414e-05    0.492704    0.459512     2.12263    0.109852    0.150801
 Generalized linear mixed model fit by maximum likelihood (Laplace
   Approximation) [glmerMod]
  Family: poisson  ( log )
 Formula: score ~ game_length + (1 | offense) + (1 | defense) + (1 | game_id)
    Data: g
       AIC       BIC    logLik  deviance  df.resid 
- 25804.19  25843.37 -12896.10  25792.19      5060 
+ 32222.70  32263.21 -16105.35  32210.70      6316 
 Random effects:
- Groups  Name        Std.Dev.
- game_id (Intercept) 0.0000  
- defense (Intercept) 0.4914  
- offense (Intercept) 0.4661  
-Number of obs: 5066, groups:  game_id, 2533; defense, 196; offense, 196
+ Groups  Name        Std.Dev. 
+ game_id (Intercept) 3.918e-05
+ defense (Intercept) 4.927e-01
+ offense (Intercept) 4.595e-01
+Number of obs: 6322, groups:  game_id, 3161; defense, 260; offense, 260
 Fixed Effects:
      (Intercept)     game_lengthOT  game_lengthOT SD  
-          2.1177            0.1040            0.1733  
+          2.1226            0.1099            0.1508  
+convergence code 0; 1 optimizer warnings; 0 lme4 warnings 
 Generalized linear mixed model fit by maximum likelihood (Laplace
   Approximation) [glmerMod]
  Family: poisson  ( log )
@@ -50,29 +37,32 @@ Formula: score ~ game_length + (1 | offense) + (1 | defense) + (1 | game_id)
    Data: g
 
      AIC      BIC   logLik deviance df.resid 
- 25804.2  25843.4 -12896.1  25792.2     5060 
+ 32222.7  32263.2 -16105.3  32210.7     6316 
 
 Scaled residuals: 
     Min      1Q  Median      3Q     Max 
--2.9385 -0.6194 -0.0299  0.5672  4.4959 
+-2.9389 -0.6206 -0.0291  0.5600  4.4881 
 
 Random effects:
- Groups  Name        Variance Std.Dev.
- game_id (Intercept) 0.0000   0.0000  
- defense (Intercept) 0.2415   0.4914  
- offense (Intercept) 0.2172   0.4661  
-Number of obs: 5066, groups:  game_id, 2533; defense, 196; offense, 196
+ Groups  Name        Variance  Std.Dev. 
+ game_id (Intercept) 1.535e-09 3.918e-05
+ defense (Intercept) 2.428e-01 4.927e-01
+ offense (Intercept) 2.112e-01 4.595e-01
+Number of obs: 6322, groups:  game_id, 3161; defense, 260; offense, 260
 
 Fixed effects:
                  Estimate Std. Error z value Pr(>|z|)    
-(Intercept)       2.11768    0.04903   43.19  < 2e-16 ***
-game_lengthOT     0.10401    0.02856    3.64 0.000271 ***
-game_lengthOT SD  0.17331    0.04313    4.02 5.87e-05 ***
+(Intercept)       2.12263    0.04230  50.175  < 2e-16 ***
+game_lengthOT     0.10985    0.02541   4.323 1.54e-05 ***
+game_lengthOT SD  0.15080    0.03836   3.931 8.45e-05 ***
 ---
 Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 
 Correlation of Fixed Effects:
             (Intr) gm_lOT
-gam_lngthOT -0.017       
-gm_lngtOTSD -0.011  0.026
+gam_lngthOT -0.018       
+gm_lngtOTSD -0.012  0.028
+convergence code: 0
+Model failed to converge with max|grad| = 0.00231391 (tol = 0.001, component 1)
+
 [1] TRUE

@@ -11,14 +11,14 @@ agent = Mechanize.new{ |agent| agent.history.max_size=0 }
 agent.user_agent = 'Mozilla/5.0'
 
 base_url = "http://collegiatewaterpolo.org/varsity/mwaterpolo/scores"
-#http://collegiatewaterpolo.org/club/mwaterpolo/scores/2016
+#http://collegiatewaterpolo.org/club/mwaterpolo/scores/2015
 
 #game_path = "//*[@id="mainbody"]/div/div/div/table/tbody/tr[2]
 #game_path = '//*[@id="mainbody"]/div/div/div/table/tr'
 game_path = '//tr'
 
-first_year = 2016
-last_year = 2016
+first_year = ARGV[0]
+last_year = ARGV[1]
 
 #games_header = ["year","team_name","team_id","opponent_name","opponent_id",
 #                "game_date","team_score","opponent_score","location",
